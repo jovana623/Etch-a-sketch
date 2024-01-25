@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+hmtl {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "IBM Plex Mono", monospace;
+  background: linear-gradient(
+    to bottom right,
+    #000000 0%,
+    #004080 30%,
+    #002d5c 70%,
+    #000000 100%
+  );
+  color: #00ff00;
+}
+
+.title {
+  text-align: center;
+}
+
+.main-container {
+  width: 1200px;
+  margin: 2.2rem auto;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 8rem;
+}
+
+.setting-grid {
+  background-color: #00294d;
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 0 5rem;
+  margin-top: 4rem;
+}
+
+.color-picker {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clear-drawing,
+.grid-settings,
+.drawing {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.drawing-container {
+  background-color: #00294d;
+  border-radius: 20px;
+}
+
+.drawing-grid {
+  background-color: #fff;
+  margin: 2rem;
+}
+
+.btn {
+  border: 1px solid #00ff00;
+  padding: 1rem 2rem;
+  background-color: #00294d;
+  color: #00ff00;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.btn-drawings:hover {
+  background-color: #00ff00;
+  transition: background-color 0.4s ease-in;
+  color: #00294d;
+}
+
+.active {
+  background-color: #00ff00;
+  color: #00294d;
+  transition: background-color 0.4s ease-in;
+}
+
+.slider input[type="range"] {
+  appearance: none;
+  border: none;
+  width: 100%;
+  height: 10px;
+  background: #ddd;
+  border-radius: 5px;
+}
+
+.slider input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #00ff00;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-text {
+  text-align: center;
+}
+
+.btn-clear {
+  background-color: #00ff00;
+  color: #00294d;
+}
+
+.btn-clear:hover {
+  background-color: #00294d;
+  color: #00ff00;
+}
+
+input[type="color"] {
+  -webkit-appearance: none;
+  border: none;
+  width: 80px;
+  height: 50px;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+  border: none;
+  border: 2px solid #00ff00;
+}

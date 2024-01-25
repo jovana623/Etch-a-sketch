@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etch-a-sketch</title>
+    <link href="style.css" rel="stylesheet" />
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="container">
+        <div class="setting-grid">
+          <div class="settings">
+            <div class="pickers">
+              <div class="color-picker">
+                <div class="background-color">
+                  <input
+                    type="color"
+                    value="#ffffff"
+                    class="background-color-picker"
+                  />
+                </div>
+                <div class="drawing-color">
+                  <input
+                    type="color"
+                    value="#000000"
+                    class="drawing-color-picker"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="drawing">
+              <button class="btn btn-drawings" id="rainbow">Rainbow</button>
+              <button class="btn btn-drawings" id="shading">Shading</button>
+              <button class="btn btn-drawings" id="eraser">Eraser</button>
+            </div>
+            <div class="grid-settings">
+              <div class="slider">
+                <input type="range" min="2" max="64" class="range-slider" />
+                <p class="range-text">32x32</p>
+              </div>
+              <button class="btn" id="remove-lines">Remove Grid</button>
+            </div>
+            <div class="clear-drawing">
+              <button class="btn btn-clear" id="clear">Clear</button>
+            </div>
+          </div>
+        </div>
+        <div class="drawing-container">
+          <div class="drawing-grid"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
